@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "hbs": "^4.2.0",
+    "init": "^0.1.2",
+    "mongod": "^2.0.0",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.12.2",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  },
+  "name": "srm-website-dynamic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "This is a demo website of SRM SIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DangerousCoder9/SRM-IST.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DangerousCoder9/SRM-IST/issues"
+  },
+  "homepage": "https://github.com/DangerousCoder9/SRM-IST#readme"
+}

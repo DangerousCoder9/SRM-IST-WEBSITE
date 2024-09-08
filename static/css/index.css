@@ -1,0 +1,76 @@
+.map {
+    margin: 96px 12px -8px 196px;
+    width: 832px;
+    height: 490px;
+}
+
+h1 {
+    text-align: center;
+    margin: 12px 0px;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    height: 228px;
+    width: 462px;
+}
+
+.myform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.one {
+    display: flex;
+}
+
+.myinput {
+    width: 50%;
+    margin: 23px;
+    padding: 23px;
+    font-size: large;
+    font-family: cursive;
+    border-radius: 20px;
+    outline: none;
+}
+
+.btn {
+    padding: 12px 16px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 12p11x;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.container {
+    min-height: 80vh;
+}
+
+.sign {
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .map {
+        margin: 34px 0px 1px 3px;
+        width: 334px;
+        height: 423px;
+    }
+
+    .myform {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: -27px 0px 0px 0px;
+    }
+}

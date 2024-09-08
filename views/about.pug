@@ -1,0 +1,129 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Digitalising SRM IST
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi', crossorigin='anonymous')
+  body(style='background-color: #e3f2fd;')
+    nav.navbar.navbar-expand-lg(style='background-color: #e3f2fd;')
+      .container-fluid
+        img.attachment-full.size-full.lazy.loaded(width='200', height='103', src='https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/01/srm-logo-white.svg.gzip', data-src='https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/01/srm-logo-white.svg.gzip', alt='', data-was-processed='true')
+        a.navbar-brand(href='#')
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item.active
+              a.nav-link.mx-4(aria-current='page', href='/') Home
+            li.nav-item
+              a.nav-link.mx-4(href='./about') About
+            li.nav-item
+              a.nav-link.mx-4(href='./contact') Contact-us
+            li.nav-item
+              a.nav-link.mx-4(href='./campuslife') Campus Life
+            li.nav-item
+              a.nav-link.mx-4(href='./placement') Placements
+          form.d-flex(role='search')
+            input.form-control.me-2(type='search', placeholder='Search', aria-label='Search')
+            button.btn.btn-outline-success(type='submit') Search
+    #carouselExampleCaptions.carousel.slide.carousel-fade(data-bs-ride='false')
+      .carousel-indicators
+        button.active(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+        button(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='1', aria-label='Slide 2')
+        button(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='2', aria-label='Slide 3')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='/images/22.png', alt='...')
+          .carousel-caption.d-none.d-md-block
+            h2 Welcome to SRM
+            p SRM Institute of Science and Technology
+        .carousel-item
+          img.d-block.w-100(src='/images/11.jpg', alt='...')
+          .carousel-caption.d-none.d-md-block
+            h2 Best place to grow and learn
+            p SRM Institute of Science and Technology
+        .carousel-item
+          img.d-block.w-100(src='/images/33.jpg', alt='...')
+          .carousel-caption.d-none.d-md-block
+            h2 Award Winnnig Research Programms
+            p SRM Institute of Science and Technology
+      button.carousel-control-prev(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next
+    .container.my-4
+      .row.featurette.d-flex.justify-content-center.align-items-center
+        .col-md-7
+          h2.featurette-heading.fw-normal.lh-1
+            | Groomimg the brilliant minds.
+            span.text-muted Preparing for the future.
+          p.lead
+            | Top ranking university in India, offering wide range of UG, PG &amp; research programs s in
+            | engineering, management, medicine and science &amp; humanities.
+        .col-md-5
+          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(src='./images/img-11.jpg', width='400', height='400', alt='')
+    .container.my-4
+      .row.featurette.d-flex.justify-content-center.align-items-center
+        .col-md-7.order-md-2
+          h2.featurette-heading.fw-normal.lh-1
+            | One of the best Campus-life Experience. 
+            span.text-muted
+              | It&rsquo;ll
+              | blow
+              | your mind.
+          p.lead
+            | College/ University campus is a place to find valuable friendship and to cherish
+            | unforgettable moments. We, here at SRM strongly condemn any kind of ragging practices. Our students
+            | welcome the freshers with flowers and advices and they do not believe in violence or unhealthy
+            | practices.
+        .col-md-5.order-md-1
+          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(src='./images/img-22.jpg', width='400', height='400', alt='')
+    .container.my-4
+      .row.featurette.d-flex.justify-content-center.align-items-center
+        .col-md-7
+          h2.featurette-heading.fw-normal.lh-1
+            | Frequent Coding Contests. 
+            span.text-muted
+              | Sharpen
+              | your Skills.
+          p.lead
+            | Get good coding experience and develop great projects under the gudience of best
+            | faculties here at Srm.
+        .col-md-5
+          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(src='./images/img-33.jpg', width='400', height='400', alt='')
+    .container.my-4
+      .row.featurette.d-flex.justify-content-center.align-items-center
+        .col-md-7.order-md-2
+          h2.featurette-heading.fw-normal.lh-1
+            | One of the best Oppurtuniteis for Placements and Interships. 
+            span.text-muted Get your Dream Package.
+          p.lead
+            | 100% Placement Record for the past 6 Academic years.
+            | An average of 600+ companies visiting every year for CSE with 1100+ profiles.
+            | Top Super dream offers so far (Batch Wise):
+            | 41 Lakhs per annum &ndash; Adobe (2023 batch)
+            | 42.5 Lakhs per annum &ndash; Amazon (2022 batch)
+            | 35 Lakhs per annum &ndash; WorkIndia (2021 batch))
+            | 18 Lakhs per annum &ndash; Amazon (2020 batch)
+            | 39 Lakhs per annum &ndash; Adobe systems (2019 batch).
+        .col-md-5.order-md-1
+          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(src='./images/img-44.jpg', width='400', height='400', alt='')
+    .container
+      .container
+        footer.py-3.my-4
+          ul.nav.justify-content-center.border-bottom.pb-3.mb-3
+            li.nav-item
+              a.nav-link.px-2.text-muted(href='#') Home
+            li.nav-item
+              a.nav-link.px-2.text-muted(href='#') Campus Life
+            li.nav-item
+              a.nav-link.px-2.text-muted(href='#') Placements
+            li.nav-item
+              a.nav-link.px-2.text-muted(href='#') About
+            li.nav-item
+              a.nav-link.px-2.text-muted(href='#') Contact-us
+          p.text-center.text-muted SRM Institute of Science
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js', integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3', crossorigin='anonymous')

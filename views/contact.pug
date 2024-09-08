@@ -1,0 +1,90 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Digitalising SRM IST
+    link(rel='stylesheet', href='./css/index.css')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi', crossorigin='anonymous')
+  body(style='background-color: #e3f2fd;')
+    nav.navbar.navbar-expand-lg(style='background-color: #e3f2fd;')
+      .container-fluid
+        img.attachment-full.size-full.lazy.loaded(width='200', height='103', src='https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/01/srm-logo-white.svg.gzip', data-src='https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/01/srm-logo-white.svg.gzip', alt='', data-was-processed='true')
+        a.navbar-brand(href='#')
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item.active
+              a.nav-link.mx-4(aria-current='page', href='/') Home
+            li.nav-item
+              a.nav-link.mx-4(href='./about') About
+            li.nav-item
+              a.nav-link.mx-4(href='./contact') Contact-us
+            li.nav-item
+              a.nav-link.mx-4(href='./campuslife') Campus Life
+            li.nav-item
+              a.nav-link.mx-4(href='./placement') Placements
+          form.d-flex(role='search')
+            input.form-control.me-2(type='search', placeholder='Search', aria-label='Search')
+            button.btn.btn-outline-success(type='submit') Search
+    #carouselExampleCaptions.carousel.slide.carousel-fade(data-bs-ride='false')
+      .carousel-indicators
+        button.active(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+        button(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='1', aria-label='Slide 2')
+        button(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='2', aria-label='Slide 3')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='/images/22.png', alt='...')
+          .carousel-caption.d-none.d-md-block
+            h2 Welcome to SRM
+            p SRM Institute of Science and Technology
+        .carousel-item
+          img.d-block.w-100(src='/images/11.jpg', alt='...')
+          .carousel-caption.d-none.d-md-block
+            h2 Best place to grow and learn
+            p SRM Institute of Science and Technology
+        .carousel-item
+          img.d-block.w-100(src='/images/33.jpg', alt='...')
+          .carousel-caption.d-none.d-md-block
+            h2 Award Winnnig Research Programms
+            p SRM Institute of Science and Technology
+      button.carousel-control-prev(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next
+    .container
+      iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.3866710697703!2d77.53473271489749!3d28.79754888235288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf51f5aadb701%3A0x39add03eb3926d26!2sSRM%20Institute%20of%20Science%20and%20Technology%20NCR%20Campus!5e0!3m2!1sen!2sin!4v1667914602024!5m2!1sen!2sin', width='350', height='500', style='border:0;', allowfullscreen='', loading='lazy', referrerpolicy='no-referrer-when-downgrade')
+    // <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSen2BeDMolgkINiOVkYPJ36PsiAZ_neZtXFZ0n0LIGCuKrvbQ/viewform?embedded=true" width="350" height="947" frameborder="0" marginheight="0" marginwidth="0" class="contact">Loading…</iframe>
+    .container
+      .row
+        .col-md-3
+        .col-md-6.main
+          form.myform(action='/contact', method='POST')
+            h2.sign CONTACT US
+            input#name.myinput(type='text', name='name', placeholder='Name', required='')
+            br
+            input#email.myinput(type='text', name='email', placeholder='Email', required='')
+            br
+            input#phno.myinput(type='text', name='phno', placeholder='Mobile', required='')
+            br
+            input#address.myinput(type='text', name='address', placeholder='address', required='')
+            br
+            input#submit.btn(type='submit', value='Submit')
+        .col-md-3
+      footer.py-3.my-4
+        ul.nav.justify-content-center.border-bottom.pb-3.mb-3
+          li.nav-item
+            a.nav-link.px-2.text-muted(href='#') Home
+          li.nav-item
+            a.nav-link.px-2.text-muted(href='#') Campus Life
+          li.nav-item
+            a.nav-link.px-2.text-muted(href='#') Placements
+          li.nav-item
+            a.nav-link.px-2.text-muted(href='#') About
+          li.nav-item
+            a.nav-link.px-2.text-muted(href='#') Contact-us
+        p.text-center.text-muted SRM Institute of Science
+      script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js', integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3', crossorigin='anonymous')
